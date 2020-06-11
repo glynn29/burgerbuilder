@@ -6,7 +6,7 @@ const burger = (props) => {
         .map(ingredientKey =>{
             return [...Array(props.ingredients[ingredientKey])].map(
                 (_,i) =>{
-                   return <BurgerIngredient key={ingredientKey + 1} type={ingredientKey}/>;
+                   return (<BurgerIngredient key={ingredientKey + i} type={ingredientKey}/>);
                 }
             );
         }).reduce((arr,el) => {
