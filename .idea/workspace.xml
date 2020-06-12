@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c3ff88ee-b28a-4e96-be23-119aa0145007" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Layout/Layout.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/ToolBar/Toolbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Navigation/ToolBar/Toolbar.module.css" afterDir="false" />
+    <list default="true" id="c3ff88ee-b28a-4e96-be23-119aa0145007" name="Default Changelist" comment="update">
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavagationItem/NavigationItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavagationItem/NavigationItem.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavagationItems.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Navigation/NavigationItems/NavigationItems.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Burger/Burger.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/Burger.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Burger/OrderSummary/OrderSummary.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Burger/OrderSummary/OrderSummary.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Layout/Layout.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Layout/Layout.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Navigation/ToolBar/Toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navigation/ToolBar/Toolbar.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring_example_security-master" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
@@ -82,7 +80,8 @@
       <updated>1591295576209</updated>
       <workItem from="1591295580484" duration="10691000" />
       <workItem from="1591724695894" duration="3333000" />
-      <workItem from="1591822799769" duration="8278000" />
+      <workItem from="1591822799769" duration="8653000" />
+      <workItem from="1591925493128" duration="2980000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1591295994781</created>
@@ -133,7 +132,28 @@
       <option name="project" value="LOCAL" />
       <updated>1591838791968</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Nav component">
+      <created>1591838810589</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591838810589</updated>
+    </task>
+    <task id="LOCAL-00009" summary="updated layout, burger, and summary components">
+      <created>1591838841992</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591838841992</updated>
+    </task>
+    <task id="LOCAL-00010" summary="update">
+      <created>1591838875973</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591838875973</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,7 +166,10 @@
     <MESSAGE value="Logo" />
     <MESSAGE value="fixed keys glitch" />
     <MESSAGE value="Custom button component" />
-    <option name="LAST_COMMIT_MESSAGE" value="Custom button component" />
+    <MESSAGE value="Nav component" />
+    <MESSAGE value="updated layout, burger, and summary components" />
+    <MESSAGE value="update" />
+    <option name="LAST_COMMIT_MESSAGE" value="update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="225" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591301199041">
@@ -165,14 +188,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="113" key="#npm_start/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1591296182983" />
-    <state x="393" y="9" key="CommitChangelistDialog2" timestamp="1591838848458">
+    <state x="393" y="9" key="CommitChangelistDialog2" timestamp="1591838880744">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="9" key="CommitChangelistDialog2/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1591838848458" />
-    <state x="550" y="156" key="FileChooserDialogImpl" timestamp="1591304025131">
+    <state x="393" y="9" key="CommitChangelistDialog2/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1591838880744" />
+    <state x="550" y="156" key="FileChooserDialogImpl" timestamp="1591839183174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="550" y="156" key="FileChooserDialogImpl/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1591304025131" />
+    <state x="550" y="156" key="FileChooserDialogImpl/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1591839183174" />
     <state x="606" y="291" key="Github.ShareDialog" timestamp="1591304015234">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -193,10 +216,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1591579817648" />
-    <state x="362" y="147" key="Vcs.Push.Dialog.v2" timestamp="1591834328820">
+    <state x="362" y="147" key="Vcs.Push.Dialog.v2" timestamp="1591838898624">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1591834328820" />
+    <state x="362" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1591838898624" />
     <state x="467" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1591822949806">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
