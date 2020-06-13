@@ -30,11 +30,6 @@ class OrderSummary extends React.Component{
             </Aux>
         );
     }
-
-
-
-
-
-};
+}
 
 export default OrderSummary;
