@@ -3,13 +3,61 @@ import Button from "../../../components/UI/Button/Button";
 import classes from './ContactData.module.css'
 import instance from "../../../axios-orders";
 import Spinner from "../../../components/UI/Spinner/Spinner";
+import Input from "../../../components/UI/Input/Input";
 
 class ContactData extends React.Component{
     state={
-        name: ' ',
-        email: '',
-        address: {
-            undefined
+        orderForm: {
+            name: {
+                elementType: 'input',
+                elementConfig: {
+                    type: 'text',
+                    placeHolder: 'Your Name'
+                },
+                value: '',
+            },
+            street: {
+                elementType: 'input',
+                elementConfig: {
+                    type: 'text',
+                    placeHolder: 'Street'
+                },
+                value: '',
+            },
+            zipCode: {
+                elementType: 'input',
+                elementConfig: {
+                    type: 'text',
+                    placeHolder: 'Zip Code'
+                },
+                value: '',
+            },
+            country: {
+                elementType: 'input',
+                elementConfig: {
+                    type: 'text',
+                    placeHolder: 'Country'
+                },
+                value: '',
+            },
+            email : {
+                elementType: 'email',
+                elementConfig: {
+                    type: 'text',
+                    placeHolder: 'Your Email'
+                },
+                value: '',
+            },
+            deliveryMethod: {
+                elementType: 'select',
+                elementConfig: {
+                    options: [
+                        {value: 'fastest', displayValue: 'Fastest'},
+                        {value: 'cheapest', displayValue: 'cheapest'},
+                    ]
+                },
+                value: '',
+            },
         },
         loading: false,
     };
@@ -21,16 +69,7 @@ class ContactData extends React.Component{
         const order = {
             ingredients: this.props.ingredients,
             price: this.props.price,
-            customer: {
-                name:'Dumb',
-                address: {
-                    street: 'test',
-                    zip: '5454',
-                    country: 'USA'
-                },
-                email : 'gdgd@ucmo.edu'
-            },
-            deliveryMethod: 'fastest'
+
         };
         instance.post('/orders.json',order)
             .then(res => {
@@ -44,10 +83,41 @@ class ContactData extends React.Component{
             });
     };
 
+    inputChangedHandler = (event, inputIdentifier) => {
+        const updatedOrderForm = {
+            ...this.state.orderForm
+        };
+
+        const updatedFormElement = {...updatedOrderForm[inputIdentifier]};
+
+        updatedFormElement.value = event.target.value;
+        updatedOrderForm[inputIdentifier] = updatedFormElement;
+        this.setState({orderForm: updatedOrderForm});
+    };
+
     render() {
+        const formElementsArray = [];
+
+        for (let key in this.state.orderForm){
+            formElementsArray.push({
+                id: key,
+                config: this.state.orderForm[key],
+            })
+        }
+
+
+
         let form = (
             <form>
-                <input className={classes.Input} type="text" name="name" placeholder="your name"/>
+                {formElementsArray.map(formElement => (
+                    <Input
+                        key={formElement.id}
+                        elementType={formElement.config.elementType}
+                        elementConfig={formElement.config.elementConfig}
+                        value={formElement.config.value}
+                        changed={(event) => this.inputChangedHandler(event,formElement.id)}
+                    />
+                ))}
                 <Button btnType="Success" clicked={this.orderHandler}>Order</Button>
             </form>
         );
