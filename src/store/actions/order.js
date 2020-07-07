@@ -26,7 +26,7 @@ export const purchaseBurger = (orderData) =>{
         dispatch(purchaseBurgerStart());
         instance.post('/orders.json',orderData)
             .then(res => {
-                 dispatch(purchaseBurgerSuccess(res.data, orderData));
+                 dispatch(purchaseBurgerSuccess(res.data.name, orderData));
                 }
             )
             .catch(error => {
