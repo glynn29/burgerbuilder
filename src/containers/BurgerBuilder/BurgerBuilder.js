@@ -8,7 +8,7 @@ import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/Burger/OrderSummary/OrderSummary";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
-import * as burgerBuilderActions from "../../store/actions/index";
+import * as actions from "../../store/actions/index";
 
 
 
@@ -73,7 +73,7 @@ class BurgerBuilder extends React.Component{
     };
 
     purchaseContinueHandler = () => {
-
+        this.props.onInitPurchase();
         // const queryParams = [];
         // for (let i in this.state.ingredients){
         //     queryParams.push(encodeURIComponent(i) + '=' + encodeURIComponent(this.state.ingredients[i]));
@@ -136,9 +136,10 @@ const mapStateToProps = state =>{
 
 const mapDispatchToProps = dispatch => {
     return {
-        onIngredientsAdded: (igName) => dispatch(burgerBuilderActions.addIngredient(igName)),
-        onIngredientsRemoved: (igName) => dispatch(burgerBuilderActions.removeIngredient(igName)),
-        onInitIngredients: () => dispatch(burgerBuilderActions.initIngredients())
+        onIngredientsAdded: (igName) => dispatch(actions.addIngredient(igName)),
+        onIngredientsRemoved: (igName) => dispatch(actions.removeIngredient(igName)),
+        onInitIngredients: () => dispatch(actions.initIngredients()),
+        onInitPurchase: () => dispatch(actions.purchaseInit())
     }
 };
 
