@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c3ff88ee-b28a-4e96-be23-119aa0145007" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/store/reducers/auth.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/containers/Auth/Auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/containers/Auth/Auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/store/actions/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/actions/auth.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -95,7 +96,8 @@
       <workItem from="1592083138106" duration="17806000" />
       <workItem from="1593461293364" duration="42162000" />
       <workItem from="1594412249322" duration="6292000" />
-      <workItem from="1594604962456" duration="6404000" />
+      <workItem from="1594604962456" duration="7096000" />
+      <workItem from="1594761417530" duration="753000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1591295994781</created>
@@ -363,7 +365,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594688890845</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="added signup and signin functionality">
+      <created>1594692058422</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1594692058422</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -371,7 +380,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="Spinner for loading" />
     <MESSAGE value="Added axios for server http requests and responses" />
     <MESSAGE value="added Checkout summary components" />
     <MESSAGE value="added routing to Checkout and BurgerBuilder pages" />
@@ -396,7 +404,8 @@
     <MESSAGE value="reordered reducers to look cleaner" />
     <MESSAGE value="added authorization components to the application" />
     <MESSAGE value="set up actions and fixed styling for Auth" />
-    <option name="LAST_COMMIT_MESSAGE" value="set up actions and fixed styling for Auth" />
+    <MESSAGE value="added signup and signin functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="added signup and signin functionality" />
   </component>
   <component name="WindowStateProjectService">
     <state x="225" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591301199041">
@@ -415,10 +424,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="488" y="113" key="#npm_start/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1591296182983" />
-    <state x="393" y="9" key="CommitChangelistDialog2" timestamp="1594688890120">
+    <state x="393" y="9" key="CommitChangelistDialog2" timestamp="1594692057751">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="393" y="9" key="CommitChangelistDialog2/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1594688890120" />
+    <state x="393" y="9" key="CommitChangelistDialog2/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1594692057751" />
     <state x="550" y="156" key="FileChooserDialogImpl" timestamp="1593730765826">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -448,14 +457,14 @@
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1594685183239" />
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1592189548385" />
-    <state x="362" y="147" key="Vcs.Push.Dialog.v2" timestamp="1594605142504">
+    <state x="362" y="147" key="Vcs.Push.Dialog.v2" timestamp="1594692061054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="362" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1594605142504" />
-    <state x="467" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1594604963908">
+    <state x="362" y="147" key="Vcs.Push.Dialog.v2/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1594692061054" />
+    <state x="467" y="239" key="com.intellij.ide.util.TipDialog" timestamp="1594761417725">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="467" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1594604963908" />
+    <state x="467" y="239" key="com.intellij.ide.util.TipDialog/0.0.1536.824/3840.537.1920.1040@0.0.1536.824" timestamp="1594761417725" />
     <state x="579" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591303873996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
