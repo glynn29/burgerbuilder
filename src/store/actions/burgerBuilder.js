@@ -32,6 +32,9 @@ export const initIngredients = () =>{
       instance.get('https://burger-builder-528f3.firebaseio.com/ingredients.json')
           .then(response =>{
              dispatch(setIngredients(response.data));
-          }).catch(error => dispatch(fetchIngredientsFailed()));
+          })
+          .catch(error => {
+              dispatch(fetchIngredientsFailed());
+          });
   }
 };

@@ -49,11 +49,13 @@ export const auth = (email, password, isSignUp) => {
             url = 'https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=AIzaSyA9DgOSm5USDUgymoYLpUIrlToWjY0vB1I';
         }
         axios.post(url,authData)
-            .then(res => {
-                dispatch(authSuccess(res.data.idToken, res.data.localId));
-                dispatch(checkAuthTimeout(res.date.expiresIn));
+            .then(response => {
+                console.log("response"  + response.data);
+                dispatch(authSuccess(response.data.idToken, response.data.localId));
+                dispatch(checkAuthTimeout(response.data.expiresIn));
             })
             .catch(err => {
+                console.log("error: " + err);
                 dispatch(authFail(err.response.data.error));
             })
     }
