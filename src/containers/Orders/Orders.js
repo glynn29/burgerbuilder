@@ -1,10 +1,12 @@
 import React from "react";
+import {connect} from "react-redux";
+
 import instance from "../../axios-orders";
 import WithErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 import Order from "../../components/Order/Order";
 import * as actions from '../../store/actions/index'
-import {connect} from "react-redux";
 import Spinner from '../../components/UI/Spinner/Spinner'
+
 class Orders extends React.Component{
 
     componentDidMount() {
@@ -14,13 +16,13 @@ class Orders extends React.Component{
     render() {
         let orders = <Spinner/>;
         if (!this.props.loading){
-            orders = (this.props.orders.map(order =>(
+            orders = this.props.orders.map(order =>(
                 <Order
                     key={order.id}
                     ingredients={order.ingredients}
                     price={+order.price}
                 />
-            )));
+            ));
         }
         return orders;
     };

@@ -133,7 +133,7 @@ class Auth extends React.Component{
 
         let errorMessage =null;
         if (this.props.error){
-            errorMessage = <p>{this.props.error.message}</p>;
+            errorMessage = (<p>{this.props.error.message}</p>);
         }
 
         return(
@@ -142,11 +142,12 @@ class Auth extends React.Component{
                 <form onSubmit={this.submitHandler}>
                     {form}
                     <Button btnType="Success">Submit</Button>
+                </form>
                     <Button
                         clicked={this.switchAuthModeHandler}
                         btnType="Success">Switch to {this.state.isSignUp ? 'Sign In' : 'Sign Up'}
                     </Button>
-                </form>
+
             </div>
         )
     }
